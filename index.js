@@ -7,6 +7,7 @@ let app = express();
 app.use(cors());
 app.use(express.json());
 
+
 app.use("/data", DataRouter);
 app.listen(process.env.port, async () => {
   try {
